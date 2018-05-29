@@ -1,0 +1,3110 @@
+@import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Rufina:400,600,700,800')
+@import url('https://fonts.googleapis.com/css?family=Lato:400,600,400italic')
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css')
+
+// Config vars
+$kaldi-red: #FD461E
+$kaldi-red-invert: #fff
+
+$primary: $kaldi-red
+$primary-invert: $kaldi-red-invert
+
+.tags 
+  .tag
+    margin: 0 5px
+
+  a.tag:hover
+    text-decoration: none
+    background-color: #f0f0f0
+.content 
+  h2
+    text-transform: capitalize
+
+    
+.content 
+  h2 
+    span 
+      font-size: 11px !important
+      text-transform: uppercase
+      font-weight: 600
+      letter-spacing: 1px
+      font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
+      opacity: 0.7
+      text-align: center
+
+.content .taglist
+  list-style: none
+  margin-bottom: 0
+  margin-left: 0
+  margin-right: 1.5rem
+  margin-top: 1.5rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: left
+  align-items: center
+  li
+    padding: 0 0 1rem 0
+    margin-bottom: 1.5rem
+    margin-top: 0
+.content
+  figure.price-table  
+    margin: 15px 0
+// Helper Classes
+.full-width-image-container
+  width: 100vw
+  height: 400px
+  position: relative
+  left: 50%
+  right: 50%
+  margin: 5em -50vw
+  background-size: cover
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.margin-top-0
+  margin-top: 0 !important
+
+@import "~bulma"
+
+// Contact.css //
+
+input, textarea, select 
+	font-size: 15px
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
+	color: #888
+	border: 0
+	-webkit-transition: all 0.2s ease 0s
+	-moz-transition: all 0.2s ease 0s
+	-o-transition: all 0.2s ease 0s
+	transition: all 0.2s ease 0s
+	float: none
+	display: block
+	margin: 0px
+	-webkit-appearance: none
+	background: none
+
+textarea 
+	resize: none
+
+#message 
+	margin: 0
+	padding: 0px
+	z-index: 200
+	height: auto
+	text-align: center !important
+
+.error_message, #success_page 
+	display: block
+	height: auto
+	color: #d31800
+	font-style: italic
+	font-size: 12px
+	padding: 10px 0px 0px 0px
+	line-height: 1.5
+	margin-bottom: -10px
+	position: relative
+
+#success_page 
+	color: #2b2b2b !important
+
+.loader 
+	display: none
+
+.form-part 
+	padding: 0
+	margin-top: 30px
+
+.form-part textarea, .form-part select, .form-part input:not([type="submit"]):not([type="image"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]) 
+	display: block
+	width: 100%
+	padding: 12px 15px 14px
+	margin-bottom: 10px
+	border: 1px solid #d8d8d8
+	text-align: left
+	border-radius: 3px
+	line-height: 20px
+
+.form-part textarea 
+	height: 200px
+	resize: none
+
+.form-part .input-wrapper 
+	position: relative
+
+.form-part input:focus, .form-part textarea:focus 
+	background: #f9f9f9
+
+.send-btn 
+	border-radius: 30px
+	border: 1px solid #000
+	padding: 10px 25px 12px
+	line-height: 1
+	height: 36px
+	margin-top: 20px
+	margin-bottom: 10px
+	margin-left: auto
+	margin-right: auto
+	font-size: 11px !important
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 1px
+	font-family: "Lato", Arial, Helvetica, sans-serif
+	color: #fff
+	background: #000
+
+.send-btn:hover 
+	color: #fff
+	background: rgba(0,0,0,0.75)
+
+
+  // CUSTOM.CSS //
+html 
+  overflow: hidden
+
+
+.wrapper 
+  width: 100%
+  height: 100%
+  position: fixed
+  overflow: auto
+  overflow-x: auto
+  &.hide2 
+    overflow: auto
+    width: 100%
+    height: 100%
+    position: fixed
+  
+
+
+body 
+  overflow: hidden
+
+
+#menu-button.open #nav-button span 
+  &:nth-child(1) 
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+    position: relative
+    top: 2px
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    -o-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+  
+  &:nth-child(2) 
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    position: relative
+    top: -4px
+    -webkit-transition: all 0.3s ease-in-out
+    -moz-transition: all 0.3s ease-in-out
+    -o-transition: all 0.3s ease-in-out
+    transition: all 0.3s ease-in-out
+  
+  &:nth-child(3) 
+    display: none
+  
+a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link.is-active
+  background-color: transparent
+
+.navbar-item, .navbar-item .image
+  width: 100%
+  align-items: center
+  justify-content: center
+  display: flex
+
+.navbar-item .image img
+  max-height: inherit
+  width: 125px    
+
+#ajax-content 
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, 0.92)
+  position: fixed
+  opacity: 0
+  z-index: 9999
+  filter: alpha(opacity = 0)
+  overflow: hidden
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  /*z-index: 0;*/
+  -webkit-transition-delay: 0.2s
+  transition-delay: 0.2s
+  visibility: hidden
+  &.visible 
+    height: 100%
+    z-index: 9999
+    opacity: 1
+    filter: alpha(opacity = 1)
+    visibility: visible
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    -o-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+  
+  .ajax-sidebar 
+    width: 0
+    background: #fff
+    height: 100%
+    float: right
+    -webkit-transition: all 0.4s ease-in-out
+    -moz-transition: all 0.4s ease-in-out
+    -o-transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-in-out
+    z-index: 999
+  
+  &.visible .ajax-sidebar 
+    float: right
+    width: 380px
+    -webkit-transition: all 0.4s ease-in-out
+    -moz-transition: all 0.4s ease-in-out
+    -o-transition: all 0.4s ease-in-out
+    transition: all 0.4s ease-in-out
+    -webkit-transition-delay: 0.3s
+    /* Safari */
+    transition-delay: 0.3s
+  
+
+
+.ajax-sidebar #project-title 
+  padding: 55px
+  width: 380px
+  height: 100%
+
+
+#ajax-content 
+  .ajax-slider 
+    opacity: 0
+    float: left
+    width: auto
+    height: 100%
+  
+  &.visible .ajax-slider 
+    width: auto
+    float: left
+    height: 100%
+    opacity: 1
+    -webkit-transition: all 0.6s ease-in-out
+    -moz-transition: all 0.6s ease-in-out
+    -o-transition: all 0.6s ease-in-out
+    transition: all 0.6s ease-in-out
+    -webkit-transition-delay: 0.4s
+    /* Safari */
+    transition-delay: 0.4s
+    figure.images 
+      max-height: 100vh
+      text-align: center
+      img 
+        display: inline-block
+        width: auto
+        max-height: 90vh
+        padding: 0 5%
+      
+    
+  
+
+
+.ajax-close 
+  width: 48px
+  height: 48px
+  display: inline-block
+  position: absolute
+  top: 28px
+  right: 28px
+  /*background: #888;*/
+  cursor: pointer
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  -o-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+  z-index: 999999
+  background: center no-repeat #fff
+  background-size: 36px 36px
+  opacity: 0
+  &.test 
+    opacity: 1
+  
+
+
+.ajax-prev 
+  background: no-repeat #fff
+  background-size: 48px 48px
+  display: block
+  position: absolute
+  width: 54px
+  height: 74px
+  top: 50%
+  margin-top: -34px
+  left: 25px
+
+
+.ajax-next 
+  background: no-repeat #fff
+  background-size: 48px 48px
+  display: block
+  position: absolute
+  width: 54px
+  height: 74px
+  top: 50%
+  margin-top: -34px
+  right: 25px
+
+
+#project-slider 
+  position: relative
+
+
+.ajax-more 
+  display: none
+
+
+@media only screen and (max-width: 768px) 
+  .ajax-more 
+    display: block
+    width: 100%
+    position: absolute
+    bottom: 0
+    height: 50px
+    background: #fff
+    text-align: center
+    padding-top: 15px
+    cursor: pointer
+    z-index: 99999
+  
+  #ajax-content.visible 
+    .ajax-sidebar 
+      position: absolute
+      width: 0
+      right: 0
+      &.collapsed 
+        width: 100%
+      
+    
+    .ajax-slider 
+      width: 100%
+      -webkit-transition: all 0s ease-in-out
+      -moz-transition: all 0.0s ease-in-out
+      -o-transition: all 0.0s ease-in-out
+      transition: all 0.0s ease-in-out
+    
+  
+  .ajax-sidebar #project-title 
+    padding: 40px
+    margin: 0 auto
+    margin-top: 30px
+    width: 300px
+    text-align: center
+  
+  .bottom 
+    position: relative
+    padding-top: 20px
+    bottom: auto
+  
+  #project-title h3 
+    font-size: 24px
+    line-height: 1.25
+    letter-spacing: -0.5px
+  
+  .ajax-more 
+    font-size: 12px
+  
+  .ajax-prev, .ajax-next 
+    display: none !important
+  
+  #project-title .child 
+    vertical-align: top
+  
+
+// CSS SLIDER //
+  
+
+.info
+  max-width: 70rem
+  width: 100%
+  margin: 0 auto
+  margin-top: 10rem
+  position: relative
+
+.info-input
+  display: none
+  &:checked
+    &:nth-of-type(1) ~
+      .info-tab .info-tab-label:nth-of-type(1) .info-tab-label-dot
+        background-color: #fff
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5)
+      .info-arrow
+        &.mod-left .info-arrow-label:nth-of-type(0), &.mod-right .info-arrow-label:nth-of-type(2)
+          opacity: 1
+          z-index: 20
+          cursor: pointer
+          pointer-events: auto
+      .info-content .info-content-page
+        -webkit-transform: scale(1) translateX(0%)
+        transform: scale(1) translateX(0%)
+    &:nth-of-type(2) ~
+      .info-tab .info-tab-label:nth-of-type(2) .info-tab-label-dot
+        background-color: #fff
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5)
+      .info-arrow
+        &.mod-left .info-arrow-label:nth-of-type(1), &.mod-right .info-arrow-label:nth-of-type(3)
+          opacity: 1
+          z-index: 20
+          cursor: pointer
+          pointer-events: auto
+      .info-content .info-content-page
+        -webkit-transform: scale(1) translateX(-100%)
+        transform: scale(1) translateX(-100%)
+    &:nth-of-type(3) ~
+      .info-tab .info-tab-label:nth-of-type(3) .info-tab-label-dot
+        background-color: #fff
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.5)
+      .info-arrow
+        &.mod-left .info-arrow-label:nth-of-type(2), &.mod-right .info-arrow-label:nth-of-type(4)
+          opacity: 1
+          z-index: 20
+          cursor: pointer
+          pointer-events: auto
+      .info-content .info-content-page
+        -webkit-transform: scale(1) translateX(-200%)
+        transform: scale(1) translateX(-200%)
+
+.info-tab
+  position: absolute
+  right: 0
+  bottom: 1rem
+  left: 0
+  z-index: 100
+  text-align: center
+
+.info-tab-label
+  padding: 0.5rem 0.5rem
+  display: inline-block
+  cursor: pointer
+  position: relative
+  -webkit-transform: scaleY(1)
+  transform: scaleY(1)
+  transition: opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  &:hover .info-tab-label-dot
+    background-color: #fff
+
+.info-tab-label-dot
+  display: block
+  position: relative
+  z-index: 100
+  padding: 0.4rem 0.4rem
+  background-color: rgba(255, 255, 255, 0.25)
+  border-radius: 50%
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5)
+  transition: box-shadow 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), background-color 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), box-shadow 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), background-color 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), box-shadow 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), background-color 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+
+.info-arrow
+  position: absolute
+  z-index: 15
+  top: 0
+  bottom: 0
+  display: block
+  &.mod-left
+    left: -4rem
+  &.mod-right
+    right: 0rem
+
+.info-arrow-label
+  position: absolute
+  z-index: 15
+  display: block
+  width: 4rem
+  height: 100%
+  pointer-events: none
+  opacity: 0
+  transition: opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  &:after
+    position: absolute
+    top: 50%
+    width: 54px
+    height: 54px
+    text-align: center
+    font-size: 4rem
+    line-height: 1rem
+    color: rgba(255, 255, 255, 0.5)
+    transition: box-shadow 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), color 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+    transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), box-shadow 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), color 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+    transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), box-shadow 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), color 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  &:hover:after
+    color: #fff
+  &.mod-left:after
+    content: " "
+    left: 0
+    border: 0
+    background: url("/img/bg-prev.png") center no-repeat #fff
+    background-size: 24px 24px
+  &.mod-right:after
+    content: " "
+    right: 0
+    border: 0
+    background: url("/img/bg-next.png") center no-repeat #fff
+    background-size: 24px 24px
+
+.info-content
+  position: relative
+  white-space: nowrap
+  overflow: hidden
+  z-index: 10
+  transition: -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+
+.info-content-page
+  display: inline-block
+  vertical-align: top
+  transition: opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  transition: transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), opacity 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99), -webkit-transform 0.5s cubic-bezier(0.22, 0.03, 0.45, 0.99)
+  &:active
+    cursor: -webkit-grabbing
+    cursor: grabbing
+
+.info-content-page-image
+  width: 100%
+  height: auto
+  display: block    
+     
+
+// FLEXSLIDER.CSS //
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0-rainbow.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+
+/* Browser Resets
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus
+  outline: none
+
+.slides, .flex-control-nav, .flex-direction-nav
+  margin: 0
+  padding: 0
+  list-style: none
+
+ul.flex-direction-nav 
+  margin: 0
+  list-style: none
+
+/* FlexSlider Necessary Styles
+ *********************************
+
+.flexslider
+  margin: 0
+  padding: 0
+  .slides
+    > li
+      display: none
+      -webkit-backface-visibility: hidden
+      img
+        width: 100%
+        display: block
+
+/* Hide the slides before the JS is loaded. Avoids image jumping
+
+.flex-pauseplay span
+  text-transform: capitalize
+
+/* Clearfix for the .slides element
+
+.slides:after
+  content: "."
+  display: block
+  clear: both
+  visibility: hidden
+  line-height: 0
+  height: 0
+
+html[xmlns] .slides
+  display: block
+
+* html .slides
+  height: 1%
+
+/* No JavaScript Fallback
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load
+
+.no-js .slides > li:first-child
+  display: block
+
+/* FlexSlider Default Theme
+ *********************************
+
+.flexslider
+  position: relative
+  margin-bottom: 35px
+  margin-top: 15px
+
+.flex-viewport
+  max-height: 2000px
+  -webkit-transition: all 1s ease
+  -moz-transition: all 1s ease
+  transition: all 1s ease
+
+.loading .flex-viewport
+  max-height: 300px
+
+.flexslider .slides
+  zoom: 1
+
+.carousel li
+  margin-right: 5px
+
+/* Direction Nav
+
+.flex-direction-nav
+  *height: 0
+  z-index: 20
+  a
+    margin: 0px 0 0
+    z-index: 20
+    display: block
+    position: absolute
+    top: 50%
+    margin-top: -32px
+    cursor: pointer
+    text-indent: -9999px
+    opacity: 0
+    -webkit-transition: all 0.2s  ease-in-out 0s
+    -moz-transition: all 0.2s  ease-in-out 0s
+    -o-transition: all 0.2s  ease-in-out 0s
+    transition: all 0.2s  ease-in-out 0s
+    display: inline-block
+    width: 54px
+    height: 54px
+  .flex-next
+    right: -55px
+    border: 0
+    background: url("/img/bg-next.png") center no-repeat #fff
+    background-size: 24px 24px
+  
+  .flex-prev
+    left: -55px
+    border: 0
+    background: url("/img/bg-prev.png") center no-repeat #fff
+    background-size: 24px 24px
+  
+
+.flexslider
+  .flex-next, .flex-prev
+    opacity: 1
+
+/* Control Nav
+
+.flex-control-nav
+  width: 100%
+  position: absolute
+  bottom: -40px
+  text-align: center
+  display: none !important
+  li
+    margin: 0 6px
+    display: inline-block
+    zoom: 1
+    *display: inline
+
+.flex-control-paging li a
+  width: 11px
+  height: 11px
+  display: block
+  background: #666
+  background: rgba(0, 0, 0, 0.5)
+  cursor: pointer
+  text-indent: -9999px
+  -webkit-border-radius: 20px
+  -moz-border-radius: 20px
+  -o-border-radius: 20px
+  border-radius: 20px
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3)
+  &:hover
+    background: #333
+    background: rgba(0, 0, 0, 0.7)
+  &.flex-active
+    background: #000
+    background: rgba(0, 0, 0, 0.9)
+    cursor: default
+
+.flex-control-thumbs
+  margin: 5px 0 0
+  position: static
+  overflow: hidden
+  li
+    width: 25%
+    float: left
+    margin: 0
+  img
+    width: 100%
+    display: block
+    opacity: .7
+    cursor: pointer
+    &:hover
+      opacity: 1
+  .flex-active
+    opacity: 1
+    cursor: default
+
+
+/* JQUERY FANCYBOX */
+
+
+  /*! fancyBox v2.1.4 fancyapps.com | fancyapps.com/fancybox/#license */
+
+.fancybox-wrap, .fancybox-skin, .fancybox-outer, .fancybox-inner, .fancybox-image
+  padding: 0
+  margin: 0
+  border: 0
+  outline: none
+  vertical-align: top
+
+.fancybox-wrap
+  iframe, object
+    padding: 0
+    margin: 0
+    border: 0
+    outline: none
+    vertical-align: top
+
+.fancybox-nav
+  padding: 0
+  margin: 0
+  border: 0
+  outline: none
+  vertical-align: top
+  span
+    padding: 0
+    margin: 0
+    border: 0
+    outline: none
+    vertical-align: top
+
+.fancybox-tmp
+  padding: 0
+  margin: 0
+  border: 0
+  outline: none
+  vertical-align: top
+
+.fancybox-wrap
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 8020
+
+.fancybox-skin
+  position: relative
+  background: #fff
+  color: #444
+  text-shadow: none
+
+.fancybox-opened
+  z-index: 8030
+
+.fancybox-outer
+  position: relative
+
+.fancybox-inner
+  position: relative
+  overflow: hidden
+  background: #333
+
+.fancybox-type-iframe .fancybox-inner
+  -webkit-overflow-scrolling: touch
+
+.fancybox-error
+  color: #444
+  font: 14px/21px "Lato", Georgia, "Times New Roman", Times, serif
+  margin: 0
+  font-size: 13px
+  font-weight: 400
+  padding: 15px
+  white-space: nowrap
+
+.fancybox-image, .fancybox-iframe
+  display: block
+  width: 100%
+  height: 100%
+
+.fancybox-image
+  max-width: 100%
+  max-height: 100%
+
+/* #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span
+  background-image: url('fancybox_sprite.png') */
+
+#fancybox-loading
+  position: fixed
+  top: 50%
+  left: 50%
+  margin-top: -22px
+  margin-left: -22px
+  background-position: 0 -108px
+  opacity: 0.8
+  cursor: pointer
+  z-index: 8060
+  div
+    width: 44px
+    height: 44px
+/* background: url(../images/ajax-loader2.gif) center center no-repeat */
+
+.fancybox-close
+  position: absolute
+  top: -60px
+  left: -24px
+  margin-left: 50%
+  width: 48px
+  height: 48px
+  /*background: url(../images/bg-close@2x.png) center no-repeat */
+  background-size: 36px 36px
+  cursor: pointer
+  z-index: 8040
+
+.fancybox-nav
+  position: absolute
+  top: 0
+  width: 40%
+  height: 100%
+  cursor: pointer
+  text-decoration: none
+  /* background: transparent url('blank.gif') */
+  /* helps IE */
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  z-index: 8040
+
+.fancybox-prev
+  left: 0
+
+.fancybox-next
+  right: 0
+
+.fancybox-nav span
+  position: absolute
+  top: 50%
+  width: 58px
+  height: 78px
+  margin-top: -39px
+  cursor: pointer
+  z-index: 8040
+  visibility: visible !important
+
+.fancybox-prev span
+  left: -90px
+  width: 58px
+  height: 78px
+  background: center no-repeat #fff
+  background-size: 48px 48px
+  cursor: pointer
+  z-index: 8040
+
+.fancybox-next span
+  right: -90px
+  width: 58px
+  height: 78px
+  background: center no-repeat #fff
+  background-size: 48px 48px
+  cursor: pointer
+  z-index: 8040
+
+.fancybox-nav:hover span
+  visibility: visible
+
+.fancybox-tmp
+  position: absolute
+  top: -99999px
+  left: -99999px
+  visibility: hidden
+  max-width: 99999px
+  max-height: 99999px
+  overflow: visible !important
+
+/* Overlay helper
+
+.fancybox-lock
+  overflow: hidden
+
+.fancybox-overlay
+  position: absolute
+  top: 0
+  left: 0
+  overflow: hidden
+  display: none
+  z-index: 8010
+  background: rgba(0, 0, 0, 0.92)
+
+.fancybox-overlay-fixed
+  position: fixed
+  bottom: 0
+  right: 0
+
+.fancybox-lock .fancybox-overlay
+  overflow: auto
+  overflow-y: scroll
+
+/* Title helper
+
+.fancybox-title
+  visibility: hidden
+  font: 16px "Lato", Arial, Helvetica, sans-serif
+  margin: 0
+  font-weight: 400
+  font-style: normal
+  position: relative
+  text-shadow: none
+  z-index: 8050
+
+.fancybox-opened .fancybox-title
+  visibility: visible
+
+.fancybox-title-float-wrap
+  position: absolute
+  bottom: 0
+  right: 50%
+  margin-bottom: -35px
+  z-index: 8050
+  text-align: center
+  .child
+    display: inline-block
+    margin-right: -100%
+    padding: 2px 20px
+    background: transparent
+    /* Fallback for web browsers that doesn't support RGBa */
+    color: #FFF
+    line-height: 24px
+    white-space: nowrap
+
+.fancybox-title-outside-wrap
+  position: relative
+  margin-top: 10px
+  color: #fff
+
+.fancybox-title-inside-wrap
+  padding-top: 10px
+
+.fancybox-title-over-wrap
+  position: absolute
+  bottom: 0
+  left: 0
+  color: #fff
+  padding: 10px
+  background: #000
+  background: rgba(0, 0, 0, 0.8)
+
+ 
+/* STYLES */
+
+/* =1. Clearfix
+ *--------------------------------------------------------------------------------------------------------
+
+.clear
+  clear: both
+
+.clearfix
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  display: inline-block
+
+/* ----- clear fix for floats -----
+
+* html .clearfix
+  height: 1%
+
+/* hides clearfix from IE-mac
+
+.clearfix
+  display: block
+
+/* end hide from IE-mac
+
+.alignleft
+  float: left
+
+.alignright
+  float: right
+
+.aligncenter
+  margin: 0 auto
+  display: inline-block
+
+.alignnone
+  clear: both
+  font-size: 0
+  line-height: 0
+  margin: 0
+  padding: 0
+  border: 0
+  height: 0
+  width: 0
+
+.centered
+  text-align: center
+
+.hidden
+  display: none
+  visibility: hidden
+
+/* Preventing font-rendering switches during CSS transitions inside Flexslider for Safari and Chrome under MacOSX
+
+*
+  -webkit-font-smoothing: antialiased
+  &:before, &:after
+    -webkit-font-smoothing: antialiased
+
+.flexslider
+  -webkit-transform: translateZ(0px)
+
+/* End Clearfix
+ *--------------------------------------------------------------------------------------------------------
+
+/* =2. Typography
+ *--------------------------------------------------------------------------------------------------------
+
+html
+  -webkit-overflow-scrolling: touch
+  overflow-x: hidden
+  overflow: -moz-scrollbars-vertical
+  overflow-y: scroll
+  height: 100%
+
+body
+  font-size: 15px
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
+  color: #555
+  -webkit-text-size-adjust: 100%
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+
+a
+  -webkit-transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s
+  color: #2b2b2b
+  text-decoration: none
+  outline: 0
+  &:hover, &:focus
+    color: #2b2b2b
+    text-decoration: none
+    outline: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  text-rendering: optimizeLegibility
+  outline: 0
+  &:after, &:before
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    text-rendering: optimizeLegibility
+    outline: 0
+  &:focus, &:after:focus, &:before:focus
+    outline: 0
+
+p
+  line-height: 1.5
+  font-size: 15px
+  padding: 0
+  -webkit-transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s
+  position: relative
+  a
+    text-decoration: underline
+    &:hover
+      text-decoration: underline
+      color: #555
+
+a p
+  color: #555
+
+.small
+  font-size: 85%
+
+p
+  &.small
+    font-size: 11px !important
+    text-transform: uppercase
+    font-weight: 600
+    color: #888
+    letter-spacing: 1px
+  &.lefted
+    text-align: left
+
+.lefted p
+  text-align: left
+
+p.large
+  font-size: 20px
+  margin-left: auto
+  margin-right: auto
+
+.info-box-content p.large
+  max-width: 474px
+
+.extra-padding-top
+  padding-top: 10px
+
+.extra-padding-left
+  padding-left: 40px
+
+.padding
+  padding-left: 3px
+  padding-right: 3px
+
+.pb30
+  padding-bottom: 30px
+
+span.small
+  display: block
+  padding-bottom: 3px
+
+blockquote
+  border: 0
+  font-style: italic
+  position: relative
+  margin: 70px 0 20px
+  font-size: 22px
+  color: #555
+  padding: 0
+  &::before
+    content: "“" !important
+    position: absolute
+    display: block
+    font-family: Georgia, "Times New Roman", Times, serif
+    font-size: 46px
+    left: 0
+    top: -55px
+    font-weight: 600
+    width: 50px
+    margin-left: -4px
+    color: #555
+    letter-spacing: 0.1em
+  footer
+    font-style: normal
+    color: #888
+    letter-spacing: 0
+    font-weight: 400
+    font-size: 13px
+    position: absolute
+    left: 50px
+    top: -42px
+
+.button
+  border-radius: 30px
+  border: 1px solid #000
+  padding: 10px 25px 0px
+  line-height: 1
+  height: 36px
+  display: inline-block
+  margin-bottom: 10px
+  margin-top: 20px
+  font-size: 11px !important
+  text-transform: uppercase
+  font-weight: 600
+  letter-spacing: 1px
+  color: #fff
+  background: #000
+  text-decoration: none
+  &:hover
+    color: #fff
+    background: rgba(0, 0, 0, 0.85)
+    text-decoration: none
+
+.centered .button
+  margin-left: 10px
+  margin-right: 10px
+
+.client
+  width: 100%
+  border: 0
+  padding: 0px
+  position: relative
+  opacity: 0.35
+  -webkit-transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s
+  cursor: pointer
+
+.col-lg-12 .client, .col-lg-10 .client
+  width: 16.666%
+  padding: 0 10px
+  float: left
+
+.client
+  &:hover, &.no-link
+    opacity: 1
+    -webkit-transition: all 0.2s ease 0s
+    transition: all 0.2s ease 0s
+    cursor: default
+
+/* End Typography
+ *--------------------------------------------------------------------------------------------------------
+
+/* =3. Headings
+ *--------------------------------------------------------------------------------------------------------
+
+h1#logo
+  display: block
+  position: fixed
+  margin: 0 auto
+  z-index: 1000
+  left: 0
+  width: 260px
+  text-align: center
+  top: 35px
+  a
+    display: inline-block
+    text-indent: -9999px
+
+
+.hentry h1, h2, h3, h4, h5
+  line-height: 1.3
+  color: #2b2b2b
+  font-weight: 600
+  display: block
+  position: relative
+  font-family: "Rufina", Arial, Helvetica, sans-serif
+
+h2
+  font-size: 48px
+  line-height: 60px
+  letter-spacing: -2px
+  margin-top: -5px
+  padding-bottom: 20px
+  strong
+    font-weight: 700
+    letter-spacing: -2px
+
+h3
+  font-size: 36px
+  line-height: 1.2
+  letter-spacing: -1px
+
+h4
+  font-size: 24px
+  line-height: 1.25
+  letter-spacing: -0.5px
+
+h5
+  font-size: 18px
+  i
+    font-family: "Lora", Arial, Helvetica, sans-serif
+    font-weight: 400
+    font-style: italic
+
+h4 i, h3 i, h2 i
+  font-family: "Lora", Arial, Helvetica, sans-serif
+  font-weight: 400
+  font-style: italic
+
+h3.subhead
+  font-family: "Lato", Arial, Helvetica, sans-serif
+  margin-bottom: 3rem
+
+
+h3.subhead:after 
+  background-color: #d8d8d8
+  bottom: -20px
+  content: ''
+  height: 2px
+  left: 0
+  position: absolute
+  width: 60px  
+
+.header
+  margin-top: 0px
+
+.lone-header
+  margin-top: -10px
+
+.more-margin
+  margin-top: 20px
+
+/* End Headings
+ *--------------------------------------------------------------------------------------------------------
+
+/* =4. Main Nav
+ *--------------------------------------------------------------------------------------------------------
+
+#menu-button
+  display: none
+  height: auto
+  position: absolute
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  z-index: 1001
+  left: 10px
+  top: 10px
+  .cursor
+    display: block
+    height: auto
+    cursor: pointer
+    padding: 16px 16px 14px 16px
+
+#nav-button
+  display: inline-block
+  width: 22px
+  margin: 0
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+.nav-bar
+  background-color: #555
+  border-radius: 1px
+  display: block
+  width: 22px
+  height: 2px
+  margin: 0px auto 4px
+
+#main-nav
+  position: relative
+  padding: 84px 44px 20px 44px
+  width: 100%
+  text-align: left
+  a
+    text-decoration: none
+    color: #888
+    font-size: 14px
+    font-weight: 400
+    position: relative
+    width: 100%
+    border-bottom: 2px solid #f0f0f0
+    display: block
+    padding: 9px 0 10px
+    margin-top: 0
+    span
+      font-size: 10px !important
+      position: relative
+      top: 1px
+      float: right
+  >
+    ul
+      .active > a, a.active
+        color: #2b2b2b
+    .additional-links
+      .active > a, a.active
+        color: #2b2b2b
+  li a:hover
+    color: #2b2b2b
+
+#options li a
+  &.current, &.mixitup-control-active
+    color: #2b2b2b
+
+#main-nav
+  ul li:last-child a
+    border: 0
+  > ul > li > .sub-nav
+    padding: 10px 0
+    border-bottom: 2px solid #f0f0f0
+    > li > a
+      font-size: 12px
+      letter-spacing: 0
+      text-transform: none
+      font-weight: 400
+      margin: 0
+      border: 0
+      padding: 3px 15px 4px
+  li a.sub-nav-toggle i
+    line-height: 1.5
+    opacity: 0.4
+    -webkit-transition: .5s right, .5s opacity
+    -moz-transition: .5s right, .5s opacity
+    -o-transition: .5s right, .5s opacity
+    transition: .5s right, .5s opacity
+    -moz-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+    -o-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1)
+    &:hover::before, &.active::before
+      opacity: 1
+
+#bottom-header
+  position: absolute
+  bottom: 35px
+  width: 100%
+  text-align: center
+  padding: 0 44px
+  p.small
+    padding-top: 20px
+    color: #888
+    line-height: 1.9
+  .social-list
+    border-bottom: 2px solid #f0f0f0
+  p
+    padding-top: 20px
+    color: #888
+    font-size: 12px
+
+/* End Main Nav
+ *--------------------------------------------------------------------------------------------------------
+
+/* =5. Main Content
+ *--------------------------------------------------------------------------------------------------------
+
+#content
+  width: 100%
+  z-index: 55
+
+.container
+  position: relative
+  margin: 0 auto
+
+#background-color, .oldie #background-color
+  display: none
+
+#content
+  background: #fff
+
+.pushed-left
+  #content, #header, #footer, #background-color, h1#logo
+    -webkit-transform: translate3d(260px, 0px, 0px)
+    transform: translate3d(260px, 0px, 0px)
+
+.pushed-left-alt
+  #content, #header, #footer, #background-color, h1#logo .no-csstransforms3d .pushed-left #content
+    -webkit-transform: translateX(260px)
+    -ms-transform: translateX(260px)
+    transform: translateX(260px)
+
+.no-csstransforms3d .pushed-left
+  #header, #footer, h1#logo
+    -webkit-transform: translateX(260px)
+    -ms-transform: translateX(260px)
+    transform: translateX(260px)
+
+#content, #header, #footer, .logo-wrapper, #background-color, h1#logo
+  -webkit-transition: -webkit-transform 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+  transition: transform 0.33s cubic-bezier(0.33, 0, 0.2, 1) 0s
+
+header
+  position: fixed
+  top: 0
+  left: 0
+  width: 260px
+  z-index: 101
+  height: 100%
+  background: #fff
+  padding-top: 123px
+  text-align: center
+
+#content
+  position: relative
+  padding-left: 260px
+  z-index: 100
+
+#white-background
+  background: #fff
+  width: 260px
+  position: fixed
+  height: 100%
+  z-index: 98
+  top: 0
+
+#Container
+  &.padding-5
+    margin: 5px
+    margin-top: 0
+    padding-top: 5px
+  .mix
+    display: none
+    margin: 0 !important
+    overflow: hidden
+
+.full-height .container, .container.full-width, .full-width .col-lg-12
+  width: 100%
+  padding-left: 0
+  padding-right: 0
+
+.full-height-wrapper
+  height: 100%
+  width: 100%
+  overflow: hidden
+
+.full-height-wrapper > .images
+  height: 100%
+  width: 100%
+  background-size: cover
+  background-position: center  
+
+.info-box-content
+  height: 100%
+  width: 100%
+  position: absolute
+  left: 0
+  top: 0
+  .parent
+    height: 100%
+    width: 100%
+    padding: 45px 90px
+    text-align: center
+  a
+    color: #fff !important
+
+.container
+  &.no-header
+    padding-top: 70px
+    padding-bottom: 70px
+  &.no-heading
+    padding-top: 100px
+
+.barrier
+  border-top: 1px solid #d8d8d8
+  height: 1px
+  width: 100%
+  position: relative
+  display: block
+
+#fixed-barrier
+  height: 100%
+  width: 1px
+  background: #d8d8d8
+  position: fixed
+  left: 260px
+  top: 0
+  z-index: 111
+
+.full-width, .padding-0
+  z-index: 112
+  position: relative
+
+.heading
+  padding-bottom: 35px
+
+/* =End Main Content
+ *--------------------------------------------------------------------------------------------------------
+
+/* =6. Background Images
+ *--------------------------------------------------------------------------------------------------------
+
+/* .background-image1
+  background: url(../images/fullscreen07.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image2
+  background: url(../images/fullscreen23.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image3
+  background: url(../images/fullscreen12.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image4
+  background: url(../images/lifestyle03-lg.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image5
+  background: url(../images/food01-lg.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image6
+  background: url(../images/project04-large.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image7
+  background: url(../images/fullscreen15.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image8
+  background: url(../images/large/jessica-brenton.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+/* .background-image9
+  background: url(../images/large/stacey-sean.jpg) no-repeat center
+  height: 100%
+  display: block
+  width: 100%
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+
+.height-500
+  height: 500px
+
+.height-400
+  height: 400px
+
+/* =End Background Images
+ *--------------------------------------------------------------------------------------------------------
+
+/* =7. Column Grid
+ *--------------------------------------------------------------------------------------------------------
+.project-list > .columns:nth-of-type(odd)
+  flex-flow: row-reverse
+
+.borderline
+  border-top: 2px solid #f0f0f0
+  height: 2px
+  width: 100%
+  display: inline-block
+  position: relative
+  margin: 20px 0 30px 0
+
+.boxed
+  border: 2px solid #f0f0f0
+  padding: 25px 35px
+  margin-bottom: 30px
+
+.bottom
+  position: absolute
+  bottom: 40px
+
+.padding-0 .mix
+  padding: 0px
+
+.padding-5 .mix
+  padding: 5px
+
+.padding-0
+  font-size: 0
+  overflow-x: hidden
+
+.blog-page
+  .teaser
+    padding: 0
+  .last-teaser
+    border-bottom: 1px solid #d8d8d8
+
+.teaser-content
+  padding: 45px 35px
+
+a
+  .teaser-content h3
+    -webkit-transition: all 0.2s ease 0s
+    -moz-transition: all 0.2s ease 0s
+    -o-transition: all 0.2s ease 0s
+    transition: all 0.2s ease 0s
+  &:hover .teaser-content h3
+    color: #555
+    -webkit-transition: all 0.2s ease 0s
+    -moz-transition: all 0.2s ease 0s
+    -o-transition: all 0.2s ease 0s
+    transition: all 0.2s ease 0s
+
+.teaser-bottom
+  border-top: 2px solid #f0f0f0
+  margin-top: 25px
+  p
+    font-size: 85%
+    padding: 15px 0 0 0
+    margin-bottom: 0
+
+.blank .parent
+  border-bottom: 1px solid #d8d8d8
+  border-top: 1px solid #d8d8d8
+
+.containing-image-wrapper
+  height: 100%
+  padding: 0
+  position: absolute
+  left: 0
+  top: 0
+  &.right
+    right: 0
+    left: auto
+
+/* horizontal centering
+
+.parent
+  width: auto
+  margin: 0px auto
+  position: relative
+  height: 100%
+  z-index: 11
+
+.child
+  text-align: center
+
+/* vertical centering
+
+.parent
+  display: table
+
+.child
+  display: table-cell
+  vertical-align: middle
+  padding: 0
+
+/* =End Column Grid
+ *--------------------------------------------------------------------------------------------------------
+
+/* =8. Content Elements
+ *--------------------------------------------------------------------------------------------------------
+
+.overflow, .element
+  overflow: hidden
+
+.relative
+  position: relative
+
+.break
+  display: block
+  position: relative
+  height: 40px
+  width: 100%
+
+.medium-break
+  display: block
+  position: relative
+  height: 30px
+  width: 100%
+
+.small-break
+  display: block
+  position: relative
+  height: 20px
+  width: 100%
+
+.tiny-break
+  display: block
+  position: relative
+  height: 10px
+  width: 100%
+
+.nav-tabs
+  margin-bottom: 45px
+  padding-left: 0px
+  padding-top: 10px
+  text-align: center
+  border-bottom: 2px solid #f0f0f0
+  > li
+    float: none
+    margin-bottom: -2px
+
+.nav > li
+  display: inline-block
+
+.nav-tabs
+  > li > a
+    border-radius: 0
+    font-size: 11px
+    font-weight: 600
+    color: #2b2b2b
+    background: #fff
+    border: 0
+    width: auto
+    height: 88px
+    padding: 58px 0 0 0
+    margin: 0 20px
+    opacity: 0.5
+    text-transform: uppercase
+    letter-spacing: 1px
+    min-width: 48px
+    &:hover
+      background: #fff
+      color: #2b2b2b
+      border: 0
+      opacity: 1
+/*  li a
+    &#first-tab
+      background: url(../images/icons/bg-select@2x.png) no-repeat top center
+      background-size: 48px 48px
+    &#second-tab
+      background: url(../images/icons/bg-camera@2x.png) no-repeat top center
+      background-size: 48px 48px
+    &#third-tab
+      background: url(../images/icons/bg-illustration@2x.png) no-repeat top center
+      background-size: 48px 48px 
+  > li.active > a
+    color: #2b2b2b
+    border: 0
+    border-bottom: 2px solid #2b2b2b
+    opacity: 1
+    &:focus, &:hover
+      color: #2b2b2b
+      border: 0
+      border-bottom: 2px solid #2b2b2b
+      opacity: 1
+
+.tab-content p
+  padding-bottom: 10px
+
+/* =End Content Elements
+ *--------------------------------------------------------------------------------------------------------
+
+/* =9. Icons
+ *--------------------------------------------------------------------------------------------------------
+
+.social-list
+  padding-bottom: 20px
+  padding-top: 10px
+  margin: 0
+  font-size: 0
+  li
+    display: inline-block
+    padding: 0 4px
+    position: relative
+    a
+      i
+        color: #2b2b2b
+        opacity: 0.5
+        font-size: 16px
+        -webkit-transition: all 0.2s ease 0s
+        transition: all 0.2s ease 0s
+      &:hover i
+        color: #2b2b2b
+        -webkit-transition: all 0.2s ease 0s
+        transition: all 0.2s ease 0s
+        opacity: 1
+  p
+    margin: 0
+    margin-left: -4px
+  &.alignright li
+    padding: 0 0 0 10px
+
+i.fa
+  margin-right: 3px
+  color: #2b2b2b
+
+p i.fa
+  color: #555
+  font-size: 11px !important
+
+.button i.fa
+  color: #555
+  font-size: 11px !important
+  color: #fff
+
+.info-box-content i.fa
+  color: #fff
+
+.circled
+  border: 1px solid #000
+  border-radius: 51%
+  width: 36px
+  height: 36px
+  margin-left: 1px
+  margin-right: 1px
+  text-align: center
+  display: inline-block !important
+  background: #000
+  i.fa
+    vertical-align: middle
+    display: inline-block
+    font-size: 15px
+    color: #fff
+    margin: 0 !important
+    padding: 0 !important
+    padding-top: 9px !important
+    opacity: 1
+
+a.circled:hover i.fa
+  color: #fff !important
+
+.info-box-content
+  .social-list
+    margin-top: 20px
+    padding-bottom: 0
+  .circled
+    border: 1px solid rgba(255, 255, 255, 0.4)
+  i.fa
+    color: #fff !important
+
+.fa-comment
+  position: relative
+  top: -1px
+
+.round-button
+  border-radius: 51%
+  height: 66px
+  width: 66px
+  display: inline-block
+  text-align: center
+  border: 2px solid #fff
+  position: relative
+  margin: 15px 0 33px
+  background: #fff
+  i.fa
+    color: #2b2b2b !important
+    font-size: 18px
+    padding: 0
+    margin: 0
+    padding-top: 21px
+    padding-left: 3px
+    &.fa-map-marker
+      font-size: 22px
+      padding: 0
+      margin: 0
+      padding-top: 19px
+      padding-left: 0px
+
+.below-button
+  position: relative
+  top: -18px
+
+.icons
+  position: relative
+  height: 48px
+  width: 48px
+  margin-bottom: 16px
+  margin-top: 5px
+
+.icon-holder
+  position: relative
+  float: left
+  height: 48px
+  width: 48px
+  margin-top: 5px
+
+.centered
+  .icons, .icon-holder
+    float: none
+    display: inline-block
+
+.next-to-icon
+  margin-left: 80px
+  margin-bottom: 15px
+  &.last
+    margin-bottom: 0
+
+/* .icons
+  &.map
+    background: url(../images/icons/bg-map@2x.png) no-repeat center left
+    background-size: 48px 48px
+  &.winner
+    background: url(../images/icons/bg-winner@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.time
+    background: url(../images/icons/bg-time@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.pig
+    background: url(../images/icons/bg-pig@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.adjust
+    background: url(../images/icons/bg-adjust@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.team
+    background: url(../images/icons/bg-team@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.works
+    background: url(../images/icons/bg-works@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.chat
+    background: url(../images/icons/bg-chat@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.notes
+    background: url(../images/icons/bg-notes@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.camera
+    background: url(../images/icons/bg-camera@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.illustration
+    background: url(../images/icons/bg-illustration@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.social
+    background: url(../images/icons/bg-social@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.vector
+    background: url(../images/icons/bg-vector@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.commerce
+    background: url(../images/icons/bg-commerce@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.search
+    background: url(../images/icons/bg-search@2x.png) no-repeat center
+    background-size: 48px 48px
+  &.like
+    background: url(../images/icons/bg-like@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.share
+    background: url(../images/icons/bg-share@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.document
+    background: url(../images/icons/bg-document@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.apple
+    background: url(../images/icons/bg-apple@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.balance
+    background: url(../images/icons/bg-balance@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.beaker
+    background: url(../images/icons/bg-beaker@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.beer
+    background: url(../images/icons/bg-beer@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.books
+    background: url(../images/icons/bg-books@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.box
+    background: url(../images/icons/bg-box@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.cake
+    background: url(../images/icons/bg-cake@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.calcuLator
+    background: url(../images/icons/bg-calcuLator@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.cd
+    background: url(../images/icons/bg-cd@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.champagne
+    background: url(../images/icons/bg-champagne@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.chart
+    background: url(../images/icons/bg-chart@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.cheese
+    background: url(../images/icons/bg-cheese@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.court
+    background: url(../images/icons/bg-court@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.delivery
+    background: url(../images/icons/bg-delivery@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.dvd
+    background: url(../images/icons/bg-dvd@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.eco
+    background: url(../images/icons/bg-eco@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.film
+    background: url(../images/icons/bg-film@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.grape
+    background: url(../images/icons/bg-grape@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.hot
+    background: url(../images/icons/bg-hot@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.house
+    background: url(../images/icons/bg-house@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.icecream
+    background: url(../images/icons/bg-icecream@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.joystick
+    background: url(../images/icons/bg-joystick@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.keynote
+    background: url(../images/icons/bg-keynote@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.link
+    background: url(../images/icons/bg-link@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.magic
+    background: url(../images/icons/bg-magic@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.mail
+    background: url(../images/icons/bg-mail@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.microphone
+    background: url(../images/icons/bg-microphone@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.network
+    background: url(../images/icons/bg-network@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.palette
+    background: url(../images/icons/bg-palette@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.plaster
+    background: url(../images/icons/bg-plaster@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.player
+    background: url(../images/icons/bg-player@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.polaroid
+    background: url(../images/icons/bg-polaroid@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.printer
+    background: url(../images/icons/bg-printer@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.pulse
+    background: url(../images/icons/bg-pulse@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.radio
+    background: url(../images/icons/bg-radio@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.recorder
+    background: url(../images/icons/bg-recorder@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.scissors
+    background: url(../images/icons/bg-scissors@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.select
+    background: url(../images/icons/bg-select@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.serving
+    background: url(../images/icons/bg-serving@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.share
+    background: url(../images/icons/bg-share@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.shop
+    background: url(../images/icons/bg-shop@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.shopping
+    background: url(../images/icons/bg-shopping@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.smartphone
+    background: url(../images/icons/bg-smartphone@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.sofa
+    background: url(../images/icons/bg-sofa@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.syringe
+    background: url(../images/icons/bg-syringe@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.tape
+    background: url(../images/icons/bg-tape@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.target
+    background: url(../images/icons/bg-target@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.television
+    background: url(../images/icons/bg-television@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.video
+    background: url(../images/icons/bg-video@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.walkman
+    background: url(../images/icons/bg-walkman@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.zoom
+    background: url(../images/icons/bg-zoom@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.tags
+    background: url(../images/icons/bg-tags@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.quote
+    background: url(../images/icons/bg-quote@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.certified
+    background: url(../images/icons/bg-certified@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.mediation
+    background: url(../images/icons/bg-mediation@2x.png) center no-repeat
+    background-size: 48px 48px
+  &.heart-circle
+    background: url(../images/icons/heart-circle.png) center no-repeat
+    background-size: 48px 48px
+  &.expand
+    background: url(../images/icons/expand-2.png) center no-repeat
+    background-size: 48px 48px
+  &.graph-line
+    background: url(../images/icons/graph-line.png) center no-repeat
+    background-size: 48px 48px
+  &.graph-pie
+    background: url(../images/icons/graph-pie-2.png) center no-repeat
+    background-size: 48px 48px
+  &.location
+    background: url(../images/icons/location-pin-3.png) center no-repeat
+    background-size: 48px 48px
+  position: relative
+  height: 48px
+  width: 48px
+  margin-top: 15px
+  margin-bottom: 20px
+  display: inline-block
+
+.centered .icons, .header-section .icons
+  float: none
+  display: inline-block
+
+.next-to-icon
+  margin-left: 73px
+  margin-top: 10px
+
+.contact-page .icons
+  margin-top: 30px
+
+/* End Icons
+ *--------------------------------------------------------------------------------------------------------
+
+/* =10. Images
+ *--------------------------------------------------------------------------------------------------------
+
+.images
+  display: block
+  position: relative
+
+article .images
+  margin: 40px 0
+
+img
+  width: 100%
+  display: block
+  max-width: 100%
+  z-index: 9
+  -webkit-box-shadow: #fff 0 0 0
+  box-shadow: #fff 0 0 0
+
+.round img
+  border: 0 none
+  border-radius: 50%
+
+.videos
+  width: 1140px
+  height: 650px
+  border: 0
+
+.videoWrapper
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  margin: 35px 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.musicWrapper
+  position: relative
+  height: auto
+  margin-bottom: -6px
+  padding: 30px 0 35px
+  iframe
+    width: 100%
+    height: auto
+
+.imageWrapper
+  position: relative
+  margin: 25px 0 35px
+
+.sliphoveritemTitle
+  visibility: visible
+  line-height: 1.25
+  color: #fff
+  display: flex
+  position: relative
+  font-family: "Rufina", Arial, Helvetica, sans-serif
+  font-weight: 600
+  font-size: 24px
+  letter-spacing: -0.5px
+  background-color: rgba(5, 5, 5, 0.8) !important
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 99
+  position: absolute
+  justify-content: center
+  align-items: center
+  text-align: center
+  opacity: 0
+  transition: 500ms
+
+
+  span
+    font-size: 11px !important
+    text-transform: uppercase
+    font-weight: 600
+    opacity: 0.7
+    letter-spacing: 1px
+    font-family: "Lato", Arial, Helvetica, sans-serif
+    padding-left: 1px
+    display: block
+    margin-bottom: 10px
+  i
+    font-family: "Lora", Arial, Helvetica, sans-serif
+    font-weight: 400
+    font-style: italic
+
+.sliphoveritemTitle:hover
+  opacity: 1
+
+.overlay
+  display: block
+  position: absolute
+  top: 0
+  background-color: rgba(29, 29, 29, 0.45)
+  width: 100%
+  height: 100%
+  -webkit-transition: all 0.2s ease 0.0s
+  transition: all 0.2s ease 0.0s
+
+.overlay2
+  display: block
+  position: absolute
+  top: 0
+  background-color: rgba(29, 29, 29, 0.35)
+  width: 100%
+  height: 100%
+  -webkit-transition: all 0.2s ease 0.0s
+  transition: all 0.2s ease 0.0s
+
+.covering-image
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  border: 0
+  -webkit-transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s
+  z-index: 19
+  display: block
+  opacity: 0
+  visibility: hidden
+
+.padding-5 .covering-image
+  padding: 5px
+
+a:hover .covering-image, .team-member:hover .covering-image
+  -webkit-transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s
+  opacity: 1
+  visibility: visible
+
+.covering-image
+  p, h3, h2, h4, h5
+    color: #fff !important
+    bottom: -10px
+    position: relative
+    -webkit-transition: all 0.2s ease 0s
+    transition: all 0.2s ease 0s
+  h3
+    margin: 0px
+
+a:hover .covering-image
+  p, h3, h2, h4, h5
+    bottom: -2px
+    position: relative
+    -webkit-transition: all 0.2s ease 0s
+    transition: all 0.2s ease 0s
+
+.team-member:hover .covering-image
+  h3, p
+    bottom: -2px
+    position: relative
+    -webkit-transition: all 0.2s ease 0s
+    transition: all 0.2s ease 0s
+
+.info-box-content
+  h3, h2, h4, h5, span
+    color: #fff !important
+    margin-bottom: 0
+  p, h1
+    color: #fff !important
+  p.small
+    opacity: 0.7
+
+.blank
+  .info-box-content h5, i.fa
+    color: #2b2b2b !important
+    margin: 0 !important
+
+.avatar
+  display: inline-block
+  margin: 10px 0 20px
+  position: relative
+  img
+    width: 90px
+    height: 90px
+    border-radius: 51%
+    z-index: 2
+    position: relative
+
+.info-box-content .avatar img
+  width: 64px
+  height: 64px
+
+/* End Images
+ *--------------------------------------------------------------------------------------------------------
+
+/* =11. Footer
+ *--------------------------------------------------------------------------------------------------------
+
+footer
+  font-size: 0
+  p
+    color: #888
+    font-size: 12px
+    display: inline-block
+    padding: 0 25px
+    a
+      color: #888
+  
+  .image
+    max-width: 125px
+    margin: 0 auto 1rem
+
+/* End Footer
+ *--------------------------------------------------------------------------------------------------------
+
+/* =12. Lists
+ *--------------------------------------------------------------------------------------------------------
+
+ul.unordered-list, .hentry ul
+  list-style: disc
+  line-height: 1.5
+  padding: 0px 0px 13px 20px
+  text-align: left !important
+
+ol
+  list-style: decimal
+  line-height: 1.5
+  padding: 0px 0px 13px 20px
+  font-size: 16px
+
+.child
+  ul.unordered-list, .hentry ul, ol
+    padding: 10px 30px 0 50px
+
+ul.unordered-list li a, .hentry ul li a, ol li a
+  color: #555
+  text-decoration: underline
+
+ul.unordered-list li a:hover, .hentry ul li a:hover, ol li a:hover
+  color: #2b2b2b
+  text-decoration: underline
+
+ul.pagination
+  margin-bottom: 10px
+  border-radius: 0
+  margin-top: 10px
+  display: inline-block
+  font-size: 0
+  li a
+    margin: 0 3px
+    color: #999
+    background: none
+    border: 1px solid #d8d8d8
+    border-radius: 3px
+    font-size: 15px
+    &:hover
+      color: #2b2b2b
+      background: #f9f9f9
+    &.active
+      border: 2px solid #2b2b2b
+      color: #2b2b2b
+      padding: 5px 11px
+      &:hover
+        background: none !important
+        cursor: default
+
+/* =End Lists
+ *--------------------------------------------------------------------------------------------------------
+
+/* =13. Blog
+ *--------------------------------------------------------------------------------------------------------
+
+.signature
+  background-size: 185px 50px
+  width: 185px
+  height: 50px
+  position: absolute
+  display: block
+  opacity: 0.6
+  left: -49px
+  top: 52px
+  z-index: 1
+  -webkit-transform: rotate(-10deg)
+  transform: rotate(-10deg)
+/* background: url(../images/signature.png) center no-repeat */
+
+
+.post-text
+  font-size: 17px
+  p
+    max-width: 100% !important
+    padding: 10px 0
+    font-size: 17px
+  ul.unordered-list, .header
+    padding-top: 10px
+    padding-bottom: 10px
+
+.comment
+  padding: 40px 0 35px 0
+  border-top: 2px solid #f2f2f2
+  position: relative
+  text-align: left
+  &.reply.level-1
+    padding-left: 6.6%
+  &.last
+    margin-bottom: 35px
+  &.first
+    margin-top: 35px
+
+.commenter-avatar
+  float: left
+  padding: 0 30px 30px 0
+  width: auto
+  > img
+    width: 65px
+    height: 65px
+    border-radius: 51%
+
+.comment-content
+  float: left
+  width: calc(100% - 95px)
+  a, i.fa
+    text-decoration: none !important
+    color: #555 !important
+
+/* End Blog
+ *--------------------------------------------------------------------------------------------------------
+
+/* =14. Price Tables
+ *--------------------------------------------------------------------------------------------------------
+
+.price-table
+  text-align: center
+  padding: 0px 35px 35px
+  margin: 15px 0
+  width: 100%
+  border: 2px solid #f2f2f2
+  position: relative
+  z-index: 1
+  h3
+    padding-bottom: 10px
+  p.price
+    font-size: 60px
+    color: #2b2b2b
+    margin-left: -10px
+    font-weight: 400
+    padding-top: 15px
+    margin-bottom: 0
+    padding-bottom: 0
+    font-family: "Oswald", Arial, Helvetica, sans-serif
+    letter-spacing: -2px
+    span
+      font-size: 18px
+      display: inline-block
+      padding-top: 20px
+      padding-right: 5px
+      font-weight: 400
+      vertical-align: top
+  &.highlighted
+    p.price
+      font-size: 68px
+      span
+        padding-top: 25px
+    h4
+      font-size: 28px
+
+.line-through
+  text-decoration: line-through
+  color: #bbb
+
+.price-table
+  .price-details
+    padding: 5px 0
+    display: block
+  .heading
+    &:after
+      background: #fff
+      bottom: -5px
+      content: ""
+      height: 12px
+      left: 50%
+      margin-left: -6px
+      position: absolute
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      width: 12px
+    &:before
+      background: none repeat scroll 0 0 #f2f2f2
+      bottom: -7px
+      content: ""
+      height: 12px
+      left: 50%
+      position: absolute
+      -webkit-transform: rotate(45deg)
+      -moz-transform: rotate(45deg)
+      -o-transform: rotate(45deg)
+      transform: rotate(45deg)
+      width: 12px
+      margin-left: -6px
+    padding: 10px 0px 12px
+    margin-top: 20px
+    position: relative
+    color: #2b2b2b
+    border-bottom: 2px solid #f2f2f2
+  &.highlighted .heading
+    &:before
+      background: none repeat scroll 0 0 #2b2b2b
+    border-bottom: 2px solid #2b2b2b
+  .heading p.small
+    padding-top: 5px
+    margin-bottom: -5px
+    position: relative
+
+/* =End Price Tables
+ *--------------------------------------------------------------------------------------------------------
+
+/* =15. Circle Animation
+ *--------------------------------------------------------------------------------------------------------
+
+.round-arrow-wrapper
+  width: 48px
+  height: 48px
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+.full-height-wrapper .round-arrow-wrapper
+  margin-top: 30px
+
+.arrow-right
+  height: 12px
+  width: 18px
+  display: block
+  position: relative
+  left: 14px
+  background-size: 18px 12px
+/* background: url(../images/arrow-right-white.png) no-repeat */
+
+
+.arrow-down
+  height: 18px
+  width: 12px
+  display: block
+  position: relative
+  left: 17px
+  background-size: 12px 18px
+  top: -3px
+/*  background: url(../images/arrow-down-white.png) no-repeat */
+  
+
+.plus
+  height: 48px
+  width: 48px
+  display: block
+  background-size: 12px 12px
+/*   background: url(../images/plus.png) center no-repeat */  
+
+.round-arrow-wrapper, #nav-button, .round-button
+  position: relative
+
+.round-arrow-wrapper:hover .circle-anim, .menu-trigger:hover + .cursor .circle-anim, a:hover .circle-anim
+  opacity: 1
+
+.circle-anim
+  opacity: 0
+  -webkit-animation: circle 1.2s linear infinite
+  animation: circle 1.2s linear infinite
+  clip: rect(0, 48px, 48px, 24px)
+  height: 48px
+  width: 48px
+  position: absolute
+  left: calc(50% - 24px)
+  top: calc(50% - 24px)
+  -webkit-transition: all 0.2s ease 0s
+  transition: all 0.2s ease 0s
+
+.social-list .circle-anim
+  opacity: 0
+  -webkit-animation: circle 1.2s linear infinite
+  animation: circle 1.2s linear infinite
+  clip: rect(0, 42px, 42px, 21px)
+  height: 42px
+  width: 42px
+  position: absolute
+  left: calc(50% - 21px)
+  top: calc(50% - 21px)
+
+.comment-form-icon-wrapper .circle-anim
+  opacity: 0
+  -webkit-animation: circle 1.2s linear infinite
+  animation: circle 1.2s linear infinite
+  clip: rect(0, 66px, 66px, 33px)
+  height: 66px
+  width: 66px
+  position: absolute
+  left: calc(50% - 33px)
+  top: calc(50% - 33px)
+
+.round-button .circle-anim
+  opacity: 0
+  -webkit-animation: circle 1.2s linear infinite
+  animation: circle 1.2s linear infinite
+  clip: rect(0, 72px, 72px, 33px)
+  height: 72px
+  width: 72px
+  position: absolute
+  left: calc(50% - 36px)
+  top: calc(50% - 36px)
+
+h1 .circle-anim
+  opacity: 0
+  -webkit-animation: circle 1.2s linear infinite
+  animation: circle 1.2s linear infinite
+  clip: rect(0, 86px, 86px, 43px)
+  height: 86px
+  width: 86px
+  position: absolute
+  left: calc(50% - 43px)
+  top: calc(50% - 43px)
+
+@-webkit-keyframes circle
+  0%
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  100%
+    -webkit-transform: rotate(220deg)
+    transform: rotate(220deg)
+
+
+@keyframes circle
+  0%
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+  100%
+    -webkit-transform: rotate(220deg)
+    transform: rotate(220deg)
+
+
+.circle-anim:after
+  box-shadow: inset #fff 0 0 0 2px
+  -webkit-animation: circleline 1.2s ease-in-out infinite
+  animation: circleline 1.2s ease-in-out infinite
+  clip: rect(0, 48px, 48px, 24px)
+  content: ''
+  border-radius: 50%
+  height: 48px
+  width: 48px
+  position: absolute
+  left: 0
+  top: 0
+
+.social-list .circle-anim:after
+  box-shadow: inset #000 0 0 0 2px
+  -webkit-animation: circleline 1.2s ease-in-out infinite
+  animation: circleline 1.2s ease-in-out infinite
+  clip: rect(0, 42px, 42px, 21px)
+  content: ''
+  border-radius: 50%
+  height: 42px
+  width: 42px
+  position: absolute
+  left: 0
+  top: 0
+
+.comment-form-icon-wrapper .circle-anim:after
+  box-shadow: inset #fff 0 0 0 1px
+  -webkit-animation: circleline 1.2s ease-in-out infinite
+  animation: circleline 1.2s ease-in-out infinite
+  clip: rect(0, 66px, 66px, 33px)
+  content: ''
+  border-radius: 50%
+  height: 66px
+  width: 66px
+  position: absolute
+  left: 0
+  top: 0
+
+.round-button .circle-anim:after
+  box-shadow: inset #fff 0 0 0 2px
+  -webkit-animation: circleline 1.2s ease-in-out infinite
+  animation: circleline 1.2s ease-in-out infinite
+  clip: rect(0, 72px, 72px, 36px)
+  content: ''
+  border-radius: 50%
+  height: 72px
+  width: 72px
+  position: absolute
+  left: 0
+  top: 0
+
+h1 .circle-anim:after
+  box-shadow: inset #000 0 0 0 2px
+  -webkit-animation: circleline 1.2s ease-in-out infinite
+  animation: circleline 1.2s ease-in-out infinite
+  clip: rect(0, 86px, 86px, 43px)
+  content: ''
+  border-radius: 50%
+  height: 86px
+  width: 86px
+  position: absolute
+  left: 0
+  top: 0
+
+#nav-button .circle-anim:after
+  box-shadow: inset #999 0 0 0 1px
+  height: 48px
+  width: 48px
+
+.comment-form-icon-wrapper .circle-anim:after
+  box-shadow: inset #999 0 0 0 1px
+  height: 66px
+  width: 66px
+
+.social-list.not-white .circle-anim:after
+  box-shadow: inset #999 0 0 0 1px
+  height: 42px
+  width: 42px
+
+@-webkit-keyframes circleline
+  0%
+    -webkit-transform: rotate(-140deg)
+    transform: rotate(-140deg)
+
+  50%
+
+  100%
+    -webkit-transform: rotate(140deg)
+    transform: rotate(140deg)
+
+
+@keyframes circleline
+  0%
+    -webkit-transform: rotate(-140deg)
+    transform: rotate(-140deg)
+
+  50%
+
+  100%
+    -webkit-transform: rotate(140deg)
+    transform: rotate(140deg)
+
+
+/* End Circle Animation
+ *--------------------------------------------------------------------------------------------------------     
+
+/* RESPONSIVE */
+
+@charset "utf-8"
+
+@media only screen and (min-width: 992px)
+  .container
+    width: 910px
+
+/* Large Devices, Wide Screens
+@media only screen and (max-width: 1200px)
+  #content
+    position: absolute
+    padding-left: 0px
+    z-index: 102
+  header
+    position: absolute
+    min-height: 100%
+    height: auto
+    padding-top: 53px
+  #background-color
+    background: #fff
+    height: 100%
+    width: 100%
+    position: fixed
+    z-index: 101
+    -webkit-overflow-scrolling: touch
+    top: 0
+    left: 0
+    display: block
+  #bottom-header
+    position: relative
+    bottom: auto
+    width: 100%
+    text-align: center
+
+  #menu-button
+    display: block
+    
+  #fixed-barrier
+    display: none
+  .pushed-left #fixed-barrier
+    left: 0px
+    top: -200px
+    display: block
+    height: calc(100% + 200px)
+  h1#logo
+    background: #fff
+    width: 100%
+    position: relative
+    top: auto
+    padding: 25px 0
+  .pushed-left h1#logo
+    border-left: 1px solid #d8d8d8
+  .wrapper
+    overflow-x: hidden !important
+  .border-bottom-on-header #logo
+    border-bottom: 1px solid #d8d8d8
+
+/* Medium Devices, Desktops
+@media only screen and (max-width: 992px)
+  .client
+    width: 33.33333%
+
+/* Small Devices, Tablets
+@media only screen and (max-width: 767px)
+  .containing-image-wrapper
+    position: relative
+    height: 370px
+  .flex-direction-nav
+    .flex-next
+      right: -15px !important
+    .flex-prev
+      left: -15px !important
+  .extra-padding-left
+    padding-left: 15px
+
+/* Extra Small Devices, Phones
+@media only screen and (max-width: 480px)
+  h2
+    font-size: 36px
+    line-height: 1.2
+    letter-spacing: -1px
+  .info-box-content .parent
+    padding: 30px
+  .containing-image-wrapper
+    position: relative
+    height: 270px
+  .centered-on-xs
+    text-align: center
+  .col-lg-12 .client
+    width: 50%
+  .teaser-content
+    padding: 25px 15px
+  .comment
+    padding: 30px 0 25px
+  .commenter-avatar
+    padding: 0
+    margin: 0 auto
+    width: 150px
+    display: inline-block
+    float: none
+  .comment-content
+    padding-top: 20px
+    display: block
+    width: 100%
+    max-width: 100%
+  .comment.reply.level-1
+    padding-left: 0
+  .comment-form-wrapper
+    padding-top: 29px
+  .comment-form-icon-wrapper
+    position: relative
+    top: 0
+    left: 0
+    text-align: center
+    margin: 0 auto
+    margin-bottom: 30px
+    &:before
+      display: inline-block
+  .comment-form
+    padding: 0
+  input, textarea
+    width: 100% !important
+  .nav-tabs > li.active > a
+    border: 0
+    &:focus, &:hover
+      border: 0
+  .height-500
+    height: 450px  
+
+
+  
+
+
+  
