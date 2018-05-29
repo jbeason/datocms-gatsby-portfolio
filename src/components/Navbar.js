@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import MenuButton from '../components/MenuButton'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
 const Navbar = () => (
