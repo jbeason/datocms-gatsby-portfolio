@@ -22,19 +22,14 @@ const TemplateWrapper = ({ children, data }) => (
             __html: data.datoCmsHome.introTextNode.childMarkdownRemark.html,
           }}
         />
-        <nav id="main-nav">
-          <ul className="option-set" data-option-key="filter">
-            <li><Link className="navbar-item" to="/about">About</Link></li>
-            <li><Link className="navbar-item" to="/projects">Projects</Link></li>
-            <li> <a href="#" className="sub-nav-toggle">Services <i className="fas fa-angle-down is-pulled-right"></i></a>
-              <ul className="sub-nav hidden">
-                <li> <Link className="navbar-item" to="/websites">Web Services</Link> </li>
-                <li> <Link className="navbar-item" to="/photography">Photography</Link> </li>
-              </ul>
-            </li>
-            <li><Link className="navbar-item" to="/contact">Contact</Link></li>
-          </ul>  
-        </nav>
+        <ul className="sidebar__menu">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
         <p className="sidebar__social">
           {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
             <a
